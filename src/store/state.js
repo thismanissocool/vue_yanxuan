@@ -1,0 +1,9 @@
+/**
+ * Created by Administrator on 2018/12/29.
+ */
+
+export default {
+  warpList: [],
+  contentInfo: {},
+  classify: {}
+}
