@@ -10,12 +10,6 @@
         <div class="search_login">登录</div>
       </div>
       <div class="tabWarp">
-        <!--<div class="warpList">-->
-          <!--<ul class="list">-->
-            <!--<li class="txt">推荐</li>-->
-            <!--<li v-for="(item, index) in warpList" :key="index">{{item.name}}</li>-->
-          <!--</ul>-->
-        <!--</div>-->
         <div class="wrapper">
           <ul class="content">
             <li class="txt">推荐</li>
@@ -80,8 +74,8 @@
     <div class="msite-content">
       <div class="kingKongModule">
         <ul>
-          <li v-for="(item, index) in contentInfo.kingKongModule.kingKongList" :key="index">
-            <img :src="item.picUrl" alt="">
+          <li  v-if="contentInfo" v-for="(item, index) in contentInfo.kingKongModule.kingKongList" :key="index">
+            <img :src="item.picUrl">
             <span>{{item.text}}</span>
           </li>
         </ul>
@@ -140,7 +134,7 @@
 
     computed:{
       ...mapState(['warpList', 'contentInfo']),
-    }
+    },
   }
 </script>
 

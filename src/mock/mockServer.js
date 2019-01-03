@@ -14,4 +14,4 @@ Mock.mock('/fenlei', {code: 200, data: data});
 Mock.mock('/shouye', {code: 200, data: data2});
 
 //分类专区
-Mock.mock('/classify', {code: 200, data: classify});
+Mock.mock('/classify', {code: 200, data: classify.categoryL1List});

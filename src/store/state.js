@@ -5,5 +5,5 @@
 export default {
   warpList: [],
   contentInfo: {},
-  classify: {}
+  categoryL1List: []  //分类专区内容
 }

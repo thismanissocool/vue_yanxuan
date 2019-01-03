@@ -10,7 +10,7 @@ export default {
   [RECEIVE_CONTENTINFO](state, {contentInfo}){
     state.contentInfo = contentInfo;
   },
-  [RECEIVE_CLASSIFY](state, {classify}){
-    state.classify = classify;
+  [RECEIVE_CLASSIFY](state, {categoryL1List}){
+    state.categoryL1List = categoryL1List;
   },
 }

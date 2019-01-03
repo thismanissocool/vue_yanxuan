@@ -2,7 +2,7 @@
  * Created by Administrator on 2018/12/29.
  */
 
-import {reqwarplist, reqcontentinfo, reqclassify} from '../api'
+import {reqwarplist, reqcontentinfo, reqcategoryL1List} from '../api'
 import {RECEIVE_WARPLIST, RECEIVE_CONTENTINFO,RECEIVE_CLASSIFY} from './mutations-types'
 export default {
   //异步获取warp列表
@@ -18,10 +18,10 @@ export default {
       commit(RECEIVE_CONTENTINFO, {contentInfo: result.data})
     }
   },
-  async getclassify({commit}){
-    const result = await reqclassify();
+  async getcategoryL1List({commit}){
+    const result = await reqcategoryL1List();
     if (result.code === 200){
-      commit(RECEIVE_CLASSIFY, {classify: result.data})
+      commit(RECEIVE_CLASSIFY, {categoryL1List: result.data})
     }
   },
 }
